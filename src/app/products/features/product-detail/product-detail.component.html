@@ -1,26 +1,27 @@
 @if (productDetailState.status() === "loading") {
   <div class="loading">Loading...</div>
 } @else {
-  <section class="py-8 bg-white md:py-16 dark:bg-gray-900 antialiased">
+  <section class="py-8 bg-indigo-100 md:py-16 dark:bg-indigo-100 antialiased">
     <div class="max-w-screen-xl px-4 mx-auto 2xl:px-0">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8 xl:gap-16">
         <div class="shrink-0 max-w-md lg:max-w-lg mx-auto">
           <img
-            class="w-full"
+            class="w-full rounded-lg border border-gray-300 shadow-xl shadow-indigo-900/30"
             [src]="productDetailState.product()?.image"
             alt=""
           />
         </div>
-
+        
         <div class="mt-6 sm:mt-8 lg:mt-0">
+          
           <h1
-            class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white"
+            class="text-xl font-semibold text-indigo-950 sm:text-2xl dark:text-indigo-950"
           >
             {{ productDetailState.product()?.title }}
           </h1>
           <div class="mt-4 sm:items-center sm:gap-4 sm:flex">
             <p
-              class="text-2xl font-extrabold text-gray-900 sm:text-3xl dark:text-white"
+              class="text-2xl font-extrabold text-indigo-950 sm:text-3xl dark:text-indigo-950"
             >
               {{ productDetailState.product()?.price | currency }}
             </p>
@@ -29,7 +30,7 @@
           <div class="mt-6 sm:gap-4 sm:items-center sm:flex sm:mt-8">
             <button
               title=""
-              class="text-white mt-4 sm:mt-0 bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 flex items-center justify-center"
+              class="text-white mt-4 sm:mt-0 bg-indigo-700 hover:bg-indigo-600 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 flex items-center justify-center"
               role="button"
               (click)="addToCart()"
             >
@@ -57,7 +58,7 @@
 
           <hr class="my-6 md:my-8 border-gray-200 dark:border-gray-800" />
 
-          <p class="mb-6 text-gray-500 dark:text-gray-400">
+          <p class="mb-6 text-indigo-950 dark:text-indigo-950">
             {{ productDetailState.product()?.description }}
           </p>
         </div>

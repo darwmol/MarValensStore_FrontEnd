@@ -1,10 +1,11 @@
-<div class="mx-auto max-w-screen-xl">
+<div class="mx-auto max-w-screen-xl text-indigo-900">
   @switch (productsState.state.status()) {
     @case ("loading") {
       <p>Cargando...</p>
+      <p>El servidor está tardando en responder</p>
     }
     @case ("error") {
-      <p>Error</p>
+      <p>Error al cargar base de datos</p>
     }
 
     @default {
@@ -12,7 +13,7 @@
         <button
           type="button"
           (click)="changePage()"
-          class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-blue-800"
+          class="text-white hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-indigo-700 dark:hover:bg-indigo-600 focus:outline-none dark:focus:ring-bg-indigo-700"
         >
           Cambiar pagina
         </button>

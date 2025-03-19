@@ -6,7 +6,7 @@ github: https://github.com/darwmol/APPSERVER
 
 ## API desplegada en RENDER
 
-https://marvalensapi.onrender.com
+https://marvalensstore-api.onrender.com
 
 
 ## Aplicacion desplegada en FireBase:
