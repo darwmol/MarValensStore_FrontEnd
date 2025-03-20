@@ -17,4 +17,6 @@ export class CartItemComponent {
   onIncrease = output<ProductItemCart>();
 
   onDecrease = output<ProductItemCart>();
+
+
 }
